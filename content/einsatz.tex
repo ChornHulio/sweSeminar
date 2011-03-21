@@ -1,8 +1,8 @@
 \section{Agile Methoden und Open Source}
 (Autor: Henn)\\
-Agile Methoden sind zur Zeit voll im Trend und in Firmen werden agile
-Vorgehensweisen immer häufiger umgesetzt. Doch wie sieht die Situation in Open
-Source Projekten mit ganz anderen Umständen aus?
+Agile Methoden sind zur Zeit voll im Trend. Die Fachzeitschriften sind voll davon und in Firmen
+werden agile Vorgehensweisen immer häufiger umgesetzt. Doch wie sieht die Situation in Open Source
+Projekten mit ganz anderen Umständen und Herausforderungen aus?
 
 In diesem Abschnitt wird ein Blick in die Open Source Welt geworfen und
 analysiert, inwiefern agile Techniken eingesetzt werden. Im Anschluss werden
@@ -17,10 +17,51 @@ Vorgehensmodellen vorgehen. Allerdings finden sich auch in normalen Projekten
 Techniken, die eindeutig aus der agilen Softwareentwicklung kommen. Im Folgenden
 sollen einige Projekte als Stellvertreter für die verschiedenen Stufen der
 Adaption betrachtet werden.
-\subsubsection{Typo3}
-Die Entwickler des Open Source Content Management Systems Typo3 haben sich dazu
+
+\subsubsection{TYPO3}
+Die Entwickler des Open Source Content Management Systems TYPO3 haben sich dazu
 entschieden, ihre nächste Version vollständig nach dem Scrum Vorgehensmodell zu
-entwickeln. 
+entwickeln. Anhand dieses Beispiels soll gezeigt werden, wie es möglich ist,
+ein solches Vorgehensmodell im Open Source Bereich vollständig umzusetzen und
+was es für Bedingungen gibt, damit dies erfolgreich geschehen kann.
+
+
+Als Product-Owner, der in Firmen in der Regel aus einer Person besteht, wurde für TYPO3
+ebenfalls ein kleines Team bestehend aus drei Personen eingerichtet. Dies macht Sinn, da es sich bei
+TYPO3 ja um eine Gemeinschaftsentwicklung handelt. Eine einzelne Person als Product-Owner würde da
+keinen Sinn ergeben und dazu wäre diese Person wahrscheinlich auch noch überlastet, wenn sie diese
+Aufgabe in ihrer Freizeit ausfüllen möchte. Diese drei Personen diskutieren über die Features, die
+innerhalb eines Sprints implementiert werden sollen und priorisieren diese.
+\newline Die Rolle des Scrum-Masters wird wiederum nur von einer Person besetzt. Auch dies macht
+durchaus Sinn, da sich zwei Scrum-Master, oder sogar ein Team von Scrum-Masters eher gegenseitig bei
+der Leitung von Gesprächen behindern würde.
+\newline Das eigentliche Scrum-Team für die TYPO3 Entwicklung besteht aus 19 Entwicklern. Die alle
+miteinander in Kontakt stehen und koordiniert werden müssen.
+
+Entscheidend für den Erfolg von Scrum ist das Internet. Es bietet vielfältige Möglichkeiten,
+miteinander zu kommunizieren und große räumliche Entfernungen zu überbrücken. So kommuniziert das
+Team:
+\begin{itemize}
+\item Sprint-Planung, Review und Retrospektive werden durch Meetings im Internet durchgeführt.
+\item Es steht ein Jabber Chatroom bereit, in dem sich das Team kurzfristig abstimmen kann und
+Fragen währen der Entwicklung geklärt werden.
+\item jeden Tag findet um 17:30 Uhr das Daily Scrum Meeting statt. Danach wird das Protokoll der
+Sitzung über die Mailing Liste verschickt, damit alle, die nicht teilnehmen konnten, trotzdem auf
+dem neusten Stand sind.
+\item Das Sprint-Backlog wird ebenfalls im Internet unter forge.typo3.org gepflegt.
+\item TYPO3 Veranstaltungen werden so oft, wie möglich genutzt um persönlich miteinander sprechen
+zu können
+\end{itemize}
+
+Von entscheidendem Vorteil für die TYPO3 Entwickler, ist die Tatsache, dass sie alle aus
+Deutschland kommen. So ist es deutlich leichter, einen Termin, der auf 17:30 Uhr angesetzt ist
+wahrzunehmen. Eine solche regelmäßige zeitliche Abstimmung würde bei Entwicklern, die über die
+ganze Welt verstreut sind nicht funktionieren. Außerdem ist es so für die Projektteilnehmer
+leichter, zu den TYPO3 Veranstaltungen zu fahren, da diese ebenfalls hauptsächlich in Deutschland
+stattfinden. Auch hier wäre es für einen weit verstreutes Entwicklerteam auch finanziell nicht
+möglich, sich so oft persönlich zu sehen.
+
+
 \subsection{Vorteile agiler Methoden in Open Source Projekten}
   - Motivation von Entwicklern und Community\\
   - Rasches Umsetzen neuer Anforderungswünsche\\
