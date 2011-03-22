@@ -1,5 +1,6 @@
 \section{Agile Methoden und Open Source}
 (Autor: Henn)\\
+
 Agile Methoden sind zur Zeit voll im Trend. Die Fachzeitschriften sind voll davon und in Firmen
 werden agile Vorgehensweisen immer häufiger umgesetzt. Doch wie sieht die Situation in Open Source
 Projekten mit ganz anderen Umständen und Herausforderungen aus?
@@ -20,11 +21,10 @@ Adaption betrachtet werden.
 
 \subsubsection{TYPO3}
 Die Entwickler des Open Source Content Management Systems TYPO3 haben sich dazu
-entschieden, ihre nächste Version vollständig nach dem Scrum Vorgehensmodell zu
+entschieden, ihre nächste Version 5 (Phoenix) vollständig nach dem Scrum Vorgehensmodell zu
 entwickeln. Anhand dieses Beispiels soll gezeigt werden, wie es möglich ist,
 ein solches Vorgehensmodell im Open Source Bereich vollständig umzusetzen und
 was es für Bedingungen gibt, damit dies erfolgreich geschehen kann.
-
 
 Als Product-Owner, der in Firmen in der Regel aus einer Person besteht, wurde für TYPO3
 ebenfalls ein kleines Team bestehend aus drei Personen eingerichtet. Dies macht Sinn, da es sich bei
@@ -45,14 +45,47 @@ Team:
 \item Sprint-Planung, Review und Retrospektive werden durch Meetings im Internet durchgeführt.
 \item Es steht ein Jabber Chatroom bereit, in dem sich das Team kurzfristig abstimmen kann und
 Fragen währen der Entwicklung geklärt werden.
-\item jeden Tag findet um 17:30 Uhr das Daily Scrum Meeting statt. Danach wird das Protokoll der
-Sitzung über die Mailing Liste verschickt, damit alle, die nicht teilnehmen konnten, trotzdem auf
-dem neusten Stand sind.
+\item jeden Tag findet um 17:30 Uhr das Daily Scrum Meeting mittels Webex oder Skype statt. Danach
+wird das Protokoll der Sitzung über die Mailing Liste verschickt, damit alle, die nicht teilnehmen
+konnten, trotzdem auf dem neusten Stand sind.
 \item Das Sprint-Backlog wird ebenfalls im Internet unter forge.typo3.org gepflegt.
-\item TYPO3 Veranstaltungen werden so oft, wie möglich genutzt um persönlich miteinander sprechen
-zu können
+\item TYPO3 Veranstaltungen werden so oft, wie möglich genutzt um persönlich miteinander sprechen zu
+können
+\item Nach jedem Sprint wird das Ergebnis sowohl als Nachricht, als auch als laufende
+Demo-Installation bekanntgegeben
 \end{itemize}
 
+Der gesamte Fortschritt sowie die offizielle Dokumentation und Kommunikation wird über
+Web-Plattformen dargestellt. Auf diese Weise ist der Entwicklungsprozess sehr transparent und für
+die Community einsehbar. Dadurch verliert die Entwicklung nicht an Akzeptanz und die freiwilligen
+Committer wissen, was gerade benötigt wird.
+
+Auf der Website des Phoenix Teams befinden sich mehrere Bereiche:
+\begin{description}
+\item [Core Team] Hier befinden sich alle Informationen, die das Entwicklungs-Team zur Koordination
+benötigt. der Bereich beinhaltet
+\begin{itemize}
+\item eine Übersicht mit Link zum Issue-Tracker und einer Liste der Team Mitglieder
+\item Eine Auflistung aller bisher ausgeführten Aktivitäten, wie Wiki Änderungen, oder auch
+Änderungen am Quellcode
+\item Eine Roadmap für den aktuellen Sprint, mit Auflistung aller in diesem Sprint zu erledigenden
+User Stories und den dazugehörigen Tasks
+\item den Issue Tracker
+\item das Sprint, sowie das Product Backlog
+\item ein Gantt Chart
+\item ein Kalender
+\item  ein Wiki
+\item das Repository mit dem Quellcode
+\end{itemize}
+Das Wiki beinhaltet alle wichtigen Informationen für Entwickler, sowie teilweise Erklärungen zum
+Scrum Prozess und Richtlinien.  So findet sich dort zum Beispiel die Erklärung, was es mit der
+''Definition of Done``  auf sich hat, die
+bei Scrum ein wichtiges Artefakt darstellt.
+\item [Product Owner Team]
+\item [Scrum Master]
+\item [UI/UX Team]
+\end{description}
+Ebenfalls im Internet findet sich ein Wiki, in dem der gesamte Scrum Prozess beschrieben ist.
 Von entscheidendem Vorteil für die TYPO3 Entwickler, ist die Tatsache, dass sie alle aus
 Deutschland kommen. So ist es deutlich leichter, einen Termin, der auf 17:30 Uhr angesetzt ist
 wahrzunehmen. Eine solche regelmäßige zeitliche Abstimmung würde bei Entwicklern, die über die
@@ -60,6 +93,7 @@ ganze Welt verstreut sind nicht funktionieren. Außerdem ist es so für die Proj
 leichter, zu den TYPO3 Veranstaltungen zu fahren, da diese ebenfalls hauptsächlich in Deutschland
 stattfinden. Auch hier wäre es für einen weit verstreutes Entwicklerteam auch finanziell nicht
 möglich, sich so oft persönlich zu sehen.
+
 
 
 \subsection{Vorteile agiler Methoden in Open Source Projekten}
