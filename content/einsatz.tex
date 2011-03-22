@@ -17,7 +17,7 @@ Projekte zu finden, die von sich selbst behaupten, sie würden nach agilen
 Vorgehensmodellen vorgehen. Allerdings finden sich auch in normalen Projekten
 Techniken, die eindeutig aus der agilen Softwareentwicklung kommen. Im Folgenden
 sollen einige Projekte als Stellvertreter für die verschiedenen Stufen der
-Adaption betrachtet werden.
+Adaption mit Blick auf die Umsetzung agiler Techniken und Prinzipien betrachtet werden.
 
 \subsubsection{TYPO3}
 Die Entwickler des Open Source Content Management Systems TYPO3 haben sich dazu
@@ -25,27 +25,45 @@ entschieden, ihre nächste Version 5 (Phoenix) vollständig nach dem Scrum Vorge
 entwickeln. Anhand dieses Beispiels soll gezeigt werden, wie es möglich ist,
 ein solches Vorgehensmodell im Open Source Bereich vollständig umzusetzen und
 was es für Bedingungen gibt, damit dies erfolgreich geschehen kann.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{images/typo3_Phoenix_logo.jpg}
+	\caption{Logo TYPO3 5.0 Phoenix}
+	\label{Logo-Phoenix}
+\end{figure}
+
+Ein Sprint dauert beim TYPO3 Phoenix Team 4 Wochen. Innerhalb dieses Sprints finden tägliche
+Meetings statt und am Ende eines Sprints muss eine lauffähige Version bereit stehen. Abbildung 
+\ref{magic-cycle} visualisiert diesen Zyklus. User Stories aus dem Product Backlog werden für
+diesen Sprint ausgesucht und in einem Sprint Backlog festgehalten. Diese Stories werden dann
+innerhalb der 2-4 Wochen implementiert.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{images/typo3-magic-cycle.jpg}
+	\caption{Magic Cycle - TYPO3 Scrum Implementierung}
+	\label{magic-cycle}
+\end{figure}
+
 
 Als Product-Owner, der in Firmen in der Regel aus einer Person besteht, wurde für TYPO3
-ebenfalls ein kleines Team bestehend aus drei Personen eingerichtet. Dies macht Sinn, da es sich bei
-TYPO3 ja um eine Gemeinschaftsentwicklung handelt. Eine einzelne Person als Product-Owner würde da
-keinen Sinn ergeben und dazu wäre diese Person wahrscheinlich auch noch überlastet, wenn sie diese
-Aufgabe in ihrer Freizeit ausfüllen möchte. Diese drei Personen diskutieren über die Features, die
-innerhalb eines Sprints implementiert werden sollen und priorisieren diese.
-\newline Die Rolle des Scrum-Masters wird wiederum nur von einer Person besetzt. Auch dies macht
+ebenfalls ein kleines Team bestehend aus drei Personen eingerichtet. Dies erscheint sinnvoll, da es
+sich bei TYPO3 ja um eine Gemeinschaftsentwicklung handelt. Eine einzelne Person als Product-Owner
+würde dem Community Gedanken entgegen wirken und  wäre darüber hinaus Person wahrscheinlich auch
+noch überlastet, wenn sie plant, diese Aufgabe in ihrer Freizeit auszufüllen. Diese drei
+Personen diskutieren über die Features, die innerhalb eines Sprints implementiert werden sollen
+und priorisieren diese.
+\newline Die Rolle des Scrum-Masters wird wiederum nur von einer Person besetzt. Auch dies ergibt
 durchaus Sinn, da sich zwei Scrum-Master, oder sogar ein Team von Scrum-Masters eher gegenseitig bei
 der Leitung von Gesprächen behindern würde.
 \newline Das eigentliche Scrum-Team für die TYPO3 Entwicklung besteht aus 19 Entwicklern. Die alle
-miteinander in Kontakt stehen und koordiniert werden müssen.
-
-Entscheidend für den Erfolg von Scrum ist das Internet. Es bietet vielfältige Möglichkeiten,
-miteinander zu kommunizieren und große räumliche Entfernungen zu überbrücken. So kommuniziert das
-Team:
+miteinander in Kontakt stehen und koordiniert werden müssen. Entscheidend für den Erfolg von Scrum
+ist daher das Internet. Es bietet vielfältige Möglichkeiten, miteinander zu kommunizieren und große
+räumliche Entfernungen zu überbrücken. So kommuniziert das Team:
 \begin{itemize}
 \item Sprint-Planung, Review und Retrospektive werden durch Meetings im Internet durchgeführt.
 \item Es steht ein Jabber Chatroom bereit, in dem sich das Team kurzfristig abstimmen kann und
 Fragen währen der Entwicklung geklärt werden.
-\item jeden Tag findet um 17:30 Uhr das Daily Scrum Meeting mittels Webex oder Skype statt. Danach
+\item jeden Tag findet um 17:00 Uhr das Daily Scrum Meeting mittels Webex oder Skype statt. Danach
 wird das Protokoll der Sitzung über die Mailing Liste verschickt, damit alle, die nicht teilnehmen
 konnten, trotzdem auf dem neusten Stand sind.
 \item Das Sprint-Backlog wird ebenfalls im Internet unter forge.typo3.org gepflegt.
@@ -54,11 +72,18 @@ können
 \item Nach jedem Sprint wird das Ergebnis sowohl als Nachricht, als auch als laufende
 Demo-Installation bekanntgegeben
 \end{itemize}
-
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=1\textwidth]{images/forge-typo3-org.png}
+	}
+	\caption{forge.typo3.org}
+	\label{forge}
+\end{figure}
 Der gesamte Fortschritt sowie die offizielle Dokumentation und Kommunikation wird über
-Web-Plattformen dargestellt. Auf diese Weise ist der Entwicklungsprozess sehr transparent und für
-die Community einsehbar. Dadurch verliert die Entwicklung nicht an Akzeptanz und die freiwilligen
-Committer wissen, was gerade benötigt wird.
+die Web-Plattform forge.typo3.org dargestellt. Auf diese Weise ist der Entwicklungsprozess sehr
+transparent und für die Community einsehbar. Dadurch verliert die Entwicklung nicht an Akzeptanz und
+die freiwilligen Committer wissen, was gerade benötigt wird.
 
 Auf der Website des Phoenix Teams befinden sich mehrere Bereiche:
 \begin{description}
@@ -79,15 +104,26 @@ User Stories und den dazugehörigen Tasks
 \end{itemize}
 Das Wiki beinhaltet alle wichtigen Informationen für Entwickler, sowie teilweise Erklärungen zum
 Scrum Prozess und Richtlinien.  So findet sich dort zum Beispiel die Erklärung, was es mit der
-''Definition of Done``  auf sich hat, die
-bei Scrum ein wichtiges Artefakt darstellt.
-\item [Product Owner Team]
-\item [Scrum Master]
-\item [UI/UX Team]
+''Definition of Done``  auf sich hat, die bei Scrum ein wichtiges Artefakt darstellt.
+\item [Product Owner Team] Für das Product Owner Team gibt es ebenfalls wie beim Core Team eine
+Übersicht mit den Mitgliedern, sowie eine kurze Beschreibung des Sinns eines Teams als Product
+Owner. Es finden sich ebenso Übersichten über Aktivitäten, Issues und Termine. Außerdem wird
+ebenfalls ein Wiki gepflegt. Dieses Wiki beschäftigt sich allerdings viel mehr mit Scrum, als das
+Wiki des Core Teams. So wird hier der eigentliche Entwicklungsprozess für TYPO3 Phoenix
+beschrieben, sowie für alle, die Scrum noch nicht so gut im Kopf haben ein kleines Cheat Sheet
+hinterlegt. Ebenso findet sich hier eine Liste mit Benutzerrollen für TYPO3. Im Anschluss daran sind
+die Protokolle der einzelnen Scrum Meetings hinterlegt.
+\item [Scrum Master] im Bereich des Scrum Masters gibt es lediglich eine Übersicht, einen Bereich
+in dem die aktivitäten aufgelistet werden, sowie Issue Tracker, Gantt Chart und ein Kalender. Da
+die Rolle des Scrum Masters nur mit einer Person besetzt ist, muss hier auch nicht mehr stehen.
+\item [UI/UX Team] dieses Team beschäftigt sich mit dem User Interface, sowie der User Experience.
+Es finden sich die Übersichten, über Issues und Aktivitäten, wie in den anderen Bereichen. 
 \end{description}
-Ebenfalls im Internet findet sich ein Wiki, in dem der gesamte Scrum Prozess beschrieben ist.
+
+Die TYPO3 Entwickler haben es also geschafft, den gesamten Scrum Prozess mit minimalen Anpassungen
+für ihr Projekt zu Adaptieren.
 Von entscheidendem Vorteil für die TYPO3 Entwickler, ist die Tatsache, dass sie alle aus
-Deutschland kommen. So ist es deutlich leichter, einen Termin, der auf 17:30 Uhr angesetzt ist
+Deutschland kommen. So ist es deutlich leichter, einen Termin, der auf 17:00 Uhr angesetzt ist
 wahrzunehmen. Eine solche regelmäßige zeitliche Abstimmung würde bei Entwicklern, die über die
 ganze Welt verstreut sind nicht funktionieren. Außerdem ist es so für die Projektteilnehmer
 leichter, zu den TYPO3 Veranstaltungen zu fahren, da diese ebenfalls hauptsächlich in Deutschland

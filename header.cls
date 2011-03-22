@@ -10,7 +10,7 @@
 \typeout{* Informatik Aktuell LaTeX documentclass *}
 \typeout{* INF-AKT, V 1.0 - Springer, 2004 May 15 *}
 \typeout{******************************************}
-
+\usepackage{graphicx}
 % Options
 \let\if@envcntreset\iffalse
 \DeclareOption{envcountreset}{\let\if@envcntreset\iftrue}
@@ -1333,3 +1333,5 @@ to0pt{\kern0.55\wd0\vrule height0.45\ht0\hss}\box0}}}}
 \setlength\tabcolsep{1.4\p@}
 
 \endinput
+
+
