@@ -3,7 +3,7 @@
 Wie in Kapitel \ref{sec:einfuehrung} beschrieben, basieren alle Vorgehensmodelle auf wenigen klaren Regeln. Die bedeutendsten Modelle werden in diesem Kapitel genauer erläutert.
 
 \subsection{Extreme Programming}
-Extreme Progamming (XP) ist eine der ältesten agilen Vorgehensmodelle und gibt Vorgaben für die Planung, das Management, den Entwurf, das Testmanagement und die Programmierung eines Softwareprojekts. Dadurch wird XP sehr mächtig, aber auch anspruchsvoll für alle Beteiligten. \cite{bib:wolfRoock} \cite{bib:xp}
+Extreme Progamming (XP) ist eine der ältesten agilen Vorgehensmodelle und gibt Vorgaben für die Planung, das Management, das Quellcodedesign, das Testmanagement und die Programmierung eines Softwareprojekts. Dadurch wird XP sehr mächtig, aber auch anspruchsvoll für alle Beteiligten. \cite{bib:wolfRoock} \cite{bib:xp}
 
 \subsubsection{Planung}
 Die Anforderungen an die Softwarelösung werden in sogenannten \emph{User Stories} festgehalten. Jede Story beschreibt eine Funktion, die der Kunde möchte. Eine solche User Story könnte wie folgt lauten:
@@ -15,11 +15,14 @@ Danach wird ein Release-Plan erstellt. In der Regel werden alle drei Monate Rele
 \subsubsection{Management}
 Auch für das Management eines Softwareprojekts sind bei XP klare Regeln definiert. Täglich gibt es ein Meeting, bei dem jeder Entwickler kurz sagt, was er am Vortag getan hat, was er heute tun wird und welche Probleme er sieht. Eine weitere wichtige Regel ist, dass ein Entwickler nicht länger arbeiten darf, als er auf unbefristete Zeit leisten kann. Normalerweise sind dies acht Stunden pro Tag. Überstunden sind nicht gern gesehen. Des Weiteren soll jeder Entwickler in den gesamten Prozess eingebunden sein und immer über den Gesamtstand der Projektes informiert sein. Außerdem sollen Entwickler immer wieder mit anderen Aufgaben betraut werden. Damit soll vermieden werden, dass sie den Anschluss zum technologischen Geschehen nicht verlieren. Aus dem selben Grund soll den Entwicklern auch genügend Freiraum gegeben werden, um auch während eines Projekts sich mit technischen Neuerungen zu befassen.
 
-\subsubsection{Entwurf}
+\subsubsection{Quellcodedesign}
+Da im Gegensatz zu traditionellen Vorgehensmodellen die endgültige Architektur der Softwarelösung während der Programmierung noch nicht klar ist, sind beim Design einige Regeln zu beachten. Die wichtigste ist hier die Einfachheit. Der Quellcode ist so einfach wie möglich zu halten. Es sollen keine unnötigen Funktionen implementiert werden und es ist so zu programmieren, dass jeder aus dem Team den Quellcode verstehen kann. Des Weiteren soll immer wenn es sinnvoll ist, refactort werden.
 
 \subsubsection{Testmanagement}
+Bei Extreme Programming wird testgetrieben entwickelt. Das heißt, es werden zuerst die Unit-Tests einer Funktion geschrieben. Erst danach darf die Funktion selbst geschrieben. Diese Art der Programmierung zwingt den Programmierer zu einer genaueren Überlegung, was die Funktion erledigen soll und welche Grenzfälle dabei auftreten können. Und dabei stellt das \emph{Test First} genannte Prinzip gleichzeitig sicher, dass es eine komplette Testabdeckung gibt. Die Unit-Tests werden mehrmals täglich ausgeführt. Zur weiteren Verbesserung der Qualität werden die Änderungen der Entwickler mehrfach am Tag in die gemeinsame Quellcodebasis integriert. Dieser Integrationstest stellt sicher, dass die einzelnen Teilkomponenten korrekt miteinander arbeiten. Noch eine Stufe abstrakter ist der \emph{Acceptance Test}. Dies ist ein Black-Box-Test, der nach jeder Iteration vom Kunde durchgeführt wird. Jeder Fehler, der vom Kunde gemeldet wird, muss mit einem Unit-Test abgedeckt werden um ihn zukünftig zu vermeiden.
 
 \subsubsection{Programmierung}
+Die auffälligste Unterscheidung von XP zu traditionellen Vorgehensmodellen ist das \emph{Pair Programming}. Es sitzen immer zwei Entwickler vor einem Rechner und einer Tastatur und programmieren gemeinsam. Dabei wechseln sie sich regelmäßig ab beim Schreiben des Codes. Dies soll bei geringem Zeitverlust eine starke Qualitätssteigerung mit sich bringen. Weniger auffällig, aber trotzdem wichtig ist die Regel, dass jeder Entwickler das Recht hat jede Codezeile des Projektes zu ändern. Das heißt, wenn ihm Fehler oder Unstimmigkeiten auffallen, kann er diese gleich beheben. 
 
 \subsection{Scrum}
 
