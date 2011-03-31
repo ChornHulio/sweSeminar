@@ -1,9 +1,7 @@
 \section{Agile Methoden und Open Source}
 (Autor: Henn)\\
 
-Agile Methoden sind zur Zeit voll im Trend. Die Fachzeitschriften sind voll davon und in Firmen
-werden agile Vorgehensweisen immer häufiger umgesetzt. Doch wie sieht die Situation in Open Source
-Projekten mit ganz anderen Umständen und Herausforderungen aus?
+Der große Hype um agile Methoden ist bereits vorüber. Doch haben agile Methoden die herkömmliche Softwareentwicklung nachhaltig beeinflusst. Die Fachzeitschriften sind voll davon und in Firmen werden agile Vorgehensweisen immer häufiger umgesetzt. Doch wie sieht die Situation in Open Source Projekten mit ganz anderen Umständen und Herausforderungen aus?
 
 In diesem Abschnitt wird ein Blick in die Open Source Welt geworfen und
 analysiert, inwiefern agile Techniken eingesetzt werden. Im Anschluss werden
@@ -15,7 +13,7 @@ Bereich dargestellt.
 Bei der Recherche viel auf, dass es gar nicht so leicht ist, Open Source
 Projekte zu finden, die von sich selbst behaupten, sie würden nach agilen
 Vorgehensmodellen vorgehen. Allerdings finden sich auch in normalen Projekten
-Techniken, die eindeutig aus der agilen Softwareentwicklung kommen. Im Folgenden
+Techniken, die eindeutig aus der agilen Softwareentwicklung stammen. Im Folgenden
 sollen einige Projekte als Stellvertreter für die verschiedenen Stufen der
 Adaption mit Blick auf die Umsetzung agiler Techniken und Prinzipien betrachtet werden.
 
@@ -125,15 +123,56 @@ Es finden sich die Übersichten, über Issues und Aktivitäten, wie in den ander
 Die TYPO3 Entwickler haben es geschafft, den gesamten Scrum Prozess mit minimalen Anpassungen
 für ihr Projekt zu Adaptieren. Von entscheidendem Vorteil für die TYPO3 Entwickler, ist die
 Tatsache, dass sie alle aus Deutschland kommen. So ist es deutlich einfacher, einen Termin, der auf
-17:00 Uhr angesetzt ist, wahrzunehmen. Eine solche regelmäßige zeitliche Abstimmung würde bei
+17:00 Uhr angesetzt wurde, auch wahrzunehmen. Eine solche regelmäßige zeitliche Abstimmung würde bei
 Entwicklern, die über die ganze Welt verstreut sind nicht funktionieren. Außerdem ist es so für die
 Projektteilnehmer leichter, zu den TYPO3 Veranstaltungen zu fahren, da diese ebenfalls hauptsächlich
 in Deutschland stattfinden. Auch hier wäre es für einen weit verstreutes Entwicklerteam
 auch finanziell nicht möglich, sich so oft persönlich zu sehen. Ein weiterer Faktor ist sicherlich
-die Größe des Projektteams. Bei nur 17 Mitgliedern ist es leichter möglich, alle über das Internet
-zu koordinieren und dafür zu sorgen, dass auch wirklich alle gerade aktiv am Projekt
-teilnehmen können.
+die Größe des Projektteams. Bei nur 17 Mitgliedern ist es leichter möglich,die Koordination über das Internet zu  organisieren und dafür zu sorgen, dass auch wirklich alle gerade aktiv am Projekt teilnehmen können.
 
+\subsubsection{Firefox}
+Das Firefox Projekt besteht aus zahlreichen Unterprojekten. Diese gehen teilweise sehr unterschiedlich vor.
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=0.5\textwidth]{images/firefox-3.jpg}
+	}
+	\caption{Logo Firefox}
+	\label{fireLogo}
+\end{figure}
+So ist zum Beispiel das Tracemonkey Projekt, ein Just in Time (JIT) Compiler für JavaScript äußerst agil unterwegs. Das Projekt bezeichnet sich selbst als ''in rapid development mode''\cite{bib:trm}. So ist es zum Beispiel sehr leicht, Code beizutragen. Selbst wenn dieser nicht alle Tests bestanden hat. Man muss nur erklären, warum er den Test nicht besteht und was passieren muss, um diesen Fehler zu beheben'\cite{bib:trm}. Ein Vertreter der traditionellen Entwicklung ist zum Beispiel der Compositor, der  Teil der Rendering Engine Gecko ist \cite{bib:beltzner}
+
+Mit der Version 4 des Firefox wurde ein neues Entwicklungsmodell eingeführt. Dies soll den Missstand beheben, dass es sehr lange dauert, bis einen neue Version des Firefox herausgegeben wird, die auch wirklich neue Features mit sich bringt. Ein Umstand, der die Motivation der Entwickler nicht gerade fördert, da neue von ihnen bereitgestellte Funktionen erst ein halbes bis dreiviertel Jahr später in einer Firefox Version zur Verfügung stehen. Außerdem ist der Firefox dadurch nicht so häufig in den Medien, wie andere Browser, die öfters neue Funktionalitäten bereitstellen.
+
+Das Entwicklungsmodell soll die diversen Unterprojekte allerdings nicht in ihrem eigenen Entwicklungsmodell einschränken. Firefox Produkt Manager Mike Beltzner beschreibt dies wie folgt: ''Really, we're not tied to any specific development model, [...] We're tied to what is effective''\cite{bib:beltzner}. Nachfolgend soll dieses Entwickllungsmodell beschrieben werden und analysiert werden, inwieweit hier agile Prinzipien verfolgt werden.
+
+Das neue Entwicklungsmodell sieht mehrere Entwicklungszweige vor, die pa\-ra\-llel geführt werden.
+\begin{itemize}
+\item mozilla-central
+\item firefox-experimental (fx-exp)
+\item firefox-beta (fx-beta)
+\item Firefox
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=1\textwidth]{images/timetable-firefox.png}
+	}
+	\caption{Zeitplan Firefox}
+	\label{firett}
+\end{figure}
+
+Der Zweig mozilla-central stellt die Basis dar, in der die neusten Funktionalitäten entwickelt werden. jeweils im sechs Wochen Rhytmus werden diese Funktionalitäten, soweit sie reif genug sind in den nächst höheren Zweig überführt und dort weiter verbessert und stabilisiert, während im mozilla-central Zweig bereits an den nächsten Features gearbeitet wird. Dort besteht dann ebenfalls jeweils im sechs Wochen Rhythmus die Möglichkeit, neuen Code in den nächst höheren Zweig zu übertragen. So ist es theoretisch möglich, alle sechs Wochen eine neue Version des Firefox herauszugeben. Abbildung \ref{firett} zeigt den offiziellen Zeitplan des Firefox Projektes. der diesen sechs Wochen Rhythmus darstellt. Wie Abbildung \ref{fireusers} zeigt, stellen die verschiedenen Zweige außerdem eine neue Stufe im Testen dar. So wird sich die Zahl der Nutzer mit jedem Zweig verzehnfachen, um am Ende ein breit getestetes Produkt zur Verfügung stellen zu können.
+
+Durch diese Umgestaltung ist es dem Firefox Team möglich, schnell neue Features in die offizielle Version zu bringen, ohne dass die einzelnen Unterprojekte dadurch ausgebremst werden. Teams, die traditionell entwickeln, können einfach mehrere Zyklen für sich in Anspruch nehmen und ihre Erweiterungen zu einem späteren Zeitpunkt in die nächst höheren Zweige überführen, Teams, die eher agil vorgehen werden diesen schnellen Release Zyklus nutzen und ihre neuste Version einbringen, ohne auf langsamere Projekte warten zu müssen.
+\begin{figure}[h]
+	\centering
+	\fbox{
+		\includegraphics[width=1\textwidth]{images/firefox-channels-users.png}
+	}
+	\caption{Anzahl der Nutzer der in den verschiedenen Entwicklungszweigen}
+	\label{fireusers}
+\end{figure}
 
 
 \subsection{Vorteile agiler Methoden in Open Source Projekten}
