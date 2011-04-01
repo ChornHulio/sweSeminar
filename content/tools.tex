@@ -85,7 +85,7 @@ Zusätzlich zu den oben genannten Funktionen des Systems unterstützt \emph{Targ
 \item Bug Report mit neu hinzugekommenen, gelösten und bestehenden Fehlern
 \end{itemize}
 
-Abgerundet wird der Funktionsumfang durch die Möglichkeit Kundenwünsche erfassen zu können und in entsprechende Tasks zu formen. Dabei können auch die einzelnen Anforderungen an das Produkt verwaltet und kategorisiert werden.\\
+Abgerundet wird der Funktionsumfang durch die Möglichkeit Kundenwünsche erfassen zu können und in entsprechende Tasks zu formen. Dabei können auch die einzelnen Anforderungen an das Produkt verwaltet und kategorisiert werden. \cite{bib:targetprocess} \\
 
 \item[Team Foundation Server 2010]\hspace*{1em}\\
 
@@ -116,7 +116,7 @@ Zudem bietet \emph{Agilefant} für die Softwareentwickler Funktionen, um ihnen d
 \item Task Bearbeitung\\
 Der Entwickler kann je Iteration Tasks in seine \emph{Work Queue} einfügen und ist eine Art von persönlicher ToDo-Liste. Die anderen Entwickler können den Task, der aktuell bearbeitet wird, und die ToDo-Liste sehen.
 \item Zeitplanung\\
-Der aktuelle Zeitaufwand und der noch anstehende Zeitaufwand wird graphisch präsentiert. Der anstehende Aufwand wird anhand der \emph{Work Queue} errechnet.
+Der aktuelle Zeitaufwand und der noch anstehende Zeitaufwand wird graphisch präsentiert. Der anstehende Aufwand wird anhand der \emph{Work Queue} errechnet. \cite{bib:agilefant} \\
 \end{itemize}
 
 \item[Agilo]\hspace*{1em}\\
@@ -124,15 +124,47 @@ Der aktuelle Zeitaufwand und der noch anstehende Zeitaufwand wird graphisch prä
 \item[Digaboard]\hspace*{1em}\\
 
 \item[IceScrum]\hspace*{1em}\\
+Das Projektverwaltungswerkzeug \emph{IceScrum} ist eine web-basierte Server\--Anwendung. Die Anwendung lässt sich mittels eines Webbrowsers ansprechen und benutzen. Der Haupteinsatzzweck dieses Open-Source Werkzeugs ist die agile Vorgehensweise \emph{Scrum}. Zudem bietet \emph{IceScrum} noch Methoden der agilen Vorgehensweise \emph{Kanban}.
+Dabei unterstützt die Anwendung das \emph{Scrum} Projektmanagement durch folgende Funktionen:
+\begin{itemize}
+\item Sprint-Planung\\
+Die Sprint-Planung ist bei der agilen Vorgehensweise \emph{Scrum} sehr wichtig. Hierbei können Teammitglieder Tasks für einen Sprint erzeugen. Diese Tasks werden auf einem Dashboard dargestellt. Diese Tasks auf dem Dashboard können dann von Teammitgliedern ausgesucht, begonnen und fertiggestellt werden.
+
+\item Release-Planung\\
+Die Planung von Releases erfolgt anhand der Anlegung von Sprints. Innerhalb dieser Sprints werden dann User Stories abgearbeitet. Die Releases werden mit Hilfe der geplanten Sprints und der Teamgröße ermittelt.
+
+\item Produkt Auftragsbestand\\
+Mit Hilfe des Produk Auftragbestandes lässt sich die Priorisierung von User Stories durch den Produkt Owner managen.
+
+\item Zeiterfassung\\
+Die Zeiterfassung ermöglicht die detaillierte Anzeige von aktuellen Ständen bei Sprints und Releases für jedes Projektmitglied.
+
+\item Projektüberwachung\\
+Die Projektüberwachung wird in \emph{IceScrum} durch verschiedene Diagramme wie Burndown, Burnup, Parking Lot und verschiedenen Flussdiagrammen realisiert.
+
+\item Dashboard\\
+Das Dashboard ist ein zentraler Bestandteil für den Informationsaustausch. Auf diesem Board sind alle wichtigen Projektinformationen zu finden und auch die letzten Änderungen, Produktvisionen und die Tasks. 
+\end{itemize}
+
+Die Entwickler können sich entsprechend ihren Rollen am System einen Account anlegen. So gibt es für jede Projektrolle auch eine dazugehörige Benutzergruppe:
+\begin{itemize}
+\item Product Owner
+\item Scrum Master
+\item Stake Holder
+\item Developer
+\end{itemize}
+
+Desweiteren bietet \emph{IceScrum} gewisse Funktionen, die aus der \emph{Kanban} Vorgehensweise hervorgehen. Es ist beispielsweise das 'Work in process limit' in die Sprint-Planung mit integriert. \cite{bib:icescrum} \\
+
 
 \item[XPlanner]\hspace*{1em}\\
-Das Open-Source Projekt \emph{XPlanner} hat es sich zur Aufgabe gemacht, die Verwaltung von XP (Extreme Programming) Projekten zu unterstützen. \emph{XPlanner} ist ebenfalls ein web-basiertes Werkzeug, dass über einen Webbrowser bedient werden kann. Dabei werden die Methoden des XP durch folgende Features unterstützt:
+Das Open-Source Projekt \emph{XPlanner} hat es sich zur Aufgabe gemacht, die Verwaltung von \emph{XP (Extreme Programming)} Projekten zu unterstützen. \emph{XPlanner} ist ebenfalls ein web-basiertes Werkzeug, dass über einen Webbrowser bedient werden kann. Dabei werden die Methoden des \emph{Extreme Programming} durch folgende Features unterstützt:
 \begin{itemize}
 \item Planung von User Stories\\
 Die Planung von User Stories wird zusammen mit dem Kunden durchgeführt. Der Kunde kann seine gewünschten Funktionalitäten für die nächste Iteration eintragen. Diese Kundenwünsche werden durch den Iteration Manager in Tasks aufgeteilt. Diese Tasks können dann von den Entwicklern in der Iteration abgearbeitet werden.
 
 \item Zeitaufwandserfassung\\
-Die Aufwandserfassung ermöglicht \dots
+Die Aufwandserfassung ermöglicht den zeitlichen Verlauf von Tasks und User Stories zu ermitteln und auszuwerten. 
 
 \item Entwicklungsprozesse Überwachen\\
 Mit \emph{XPlanner} lassen sich sämtliche Tasks, User Stories und Iterationen überwachen. Die Entwicklungsprozesse können nach Status und Zeitablauf visualisiert werden.
@@ -143,7 +175,7 @@ Die zu bearbeitenden Tasks pro Iteration können von den Entwicklerpaaren ausgew
 
 Die Entwickler werden ebenfalls durch eine Zeitaufwandswerfassung unterstützt. Diese Zeitaufwandserfassung ermöglicht den Entwicklern eine leichte Aufwandserfassung der geleisteten Arbeit.
 
-Um eine gute Kommunikation mit dem Kunden zu erreichen, hat dieser auch einen Zugang zu dem Projektverwaltungswerkzeug \emph{XPlanner} und kann wie bereits genannt die Funktionen für die nächsten Iterationen vorgeben, die Fortschritte und den Arbeitsaufwand begutachten. Der Kunde kann zusammen mit den Entwicklern einen Release Plan erstellen.
+Um eine gute Kommunikation mit dem Kunden zu erreichen, hat dieser auch einen Zugang zu dem Projektverwaltungswerkzeug \emph{XPlanner} und kann wie bereits genannt die Funktionen für die nächsten Iterationen vorgeben, die Fortschritte und den Arbeitsaufwand begutachten. Der Kunde kann zusammen mit den Entwicklern einen Release Plan erstellen. \cite{bib:xplanner}
 
 \end{description}
 
