@@ -119,9 +119,66 @@ Der Entwickler kann je Iteration Tasks in seine \emph{Work Queue} einfügen und 
 Der aktuelle Zeitaufwand und der noch anstehende Zeitaufwand wird graphisch präsentiert. Der anstehende Aufwand wird anhand der \emph{Work Queue} errechnet. \cite{bib:agilefant} \\
 \end{itemize}
 
-\item[Agilo]\hspace*{1em}\\
+\item[Agilo for Scrum]\hspace*{1em}\\
+Das unter Apache Version 2.0 stehende Projektverwaltungswerkzeug \emph{Agilo} ist für die agile Vorgehensweise \emph{Scrum} vorgesehen. Das Open-Source Werkzeug wird von der Firma \emph{agile42} unterstützt, die auch Coachings, Trainings und eine \emph{Agilo Pro} Version vertreiben. Die Inhalte der \emph{Pro} Version sind nicht unter eine Open-Source Lizenz gestellt. \emph{Agilo} ist eine Weiterentwicklung der Fallbearbeitungssoftware \emph{Trac} und web-basiert. Die verschiedenen Projektrollen können für jedes Teammitglied festgelegt werden. Dabei unterstützt die Anwendung das Projektmanagement durch folgende Funktionalitäten:
+\begin{itemize}
+\item Produkt Auftragsbestand\\
+Der Produkt Auftragsbestand kann vom Product Owner erstellt werden. Dabei werden die Produktfeatures in User Stories aufgeteilt, welche mit einer Priorität versehen werden können.
+
+\item Release-Planung\\
+Die Release-Planung kann ebenfalls von der Benutzergruppe Product Owner vorgenommen werden. In dieser Planung können die Einstellung, wie beispielsweise Iterationsintervall, für die Sprits angepasst werden. Anhand der Sprints werden die Release Zeitpunkte errechnet.
+
+\item Task-Planunng\\
+Die einzelnen Tasks werden von den Entwicklern des Teams in Verbindung mit dem Scrum Master aus den User Stories erstellt. Diese Tasks können dann von Entwicklern für die Bearbeitung ausgesucht werden.
+
+\item Projektüberwachung\\
+Die Projektüberwachung in \emph{Agilo} kann mit Hilfe von Burndown-, \dots -Diagrammen visualisiert werden.
+
+\end{itemize}
+
+Die Unterstützung der Entwickler wird durch \emph{Agilo} durch folgende Produkteigenschaften erreicht:
+\begin{itemize}
+\item Quellcode Darstellung\\
+In \emph{Agilo} kann eingecheckter Quellcode im Webbrowser angezeigt werden und ermöglicht eine einfache Realisierung eines Code Reviews. Dabei wird die Möglichkeit zur Anzeige von Differenzen zwischen verschiedenen Versionsständen auch angeboten. 
+
+\item Ticket-Tracker\\
+Der Ticket-Tracker in \emph{Agilo} erlaubt das Einpflegen von Bugs und Problemen. Diese können von den betreffenden Teammitgliedern behoben werden.
+
+\item Wiki-Integration\\
+Die Itegration eines Wikis ermöglicht die einfache Dokumentation des Projektes innerhalb der Projektverwaltungssoftware.
+
+\item Subversion-Integration\\
+Die Integration in Subversion vereinfacht das Commiten von Bugfixes. Die Fehlerbehebungen werden mit dem entsprechenden Versionsstand des SVN-Repositories in \emph{Agilo} angezeigt.
+\end{itemize}
+
+Jedoch fehlen der freien Version von \emph{Agilo} noch eine Anzeigetafel, auf dem alle Ergebnisse und Stati der Sprints für jedes Projektmitglied dargestellt werden. Diese Funktion ist nur der proprietären Erweiterung vorenthalten. \cite{bib:agilo} \\
 
 \item[Digaboard]\hspace*{1em}\\
+Das freie Projekt \emph{Diagboard} ist unter der General Public License Version 2 veröffentlicht und unterstützt die agile Projektverwaltungsmethoden \emph{Scrum}, \emph{Kanban} oder vergleichbare Vorgehensweisen, die ein tägliches Meeting erfordern. Im Zentrum der web-basierten Anwendung steht eine interaktive Anzeigetafel, mit der eine einfache und leichtgewichtige Projektverwaltung erreicht werden will.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\textwidth]{images/project_board.png}
+	\caption{Digaboard Anzeigetafel}
+	\label{fig:digaboard}
+\end{figure}
+
+Mit dieser Anzeigetafel lassen sich folgende Projektmanagementaufgaben realisieren:
+\begin{itemize}
+\item Produkt Auftragsbestand\\
+Ein Produkt kann in mehrere Projekte aufgeteilt werden, wobei jedes Projekt seine eigene Spalte in der Anzeigetafel bekommt. Die Anzeigetafel hat mehrere Zeilen, die den Status des Projekts intuitiv darstellen.
+
+\item Task-Planung\\
+Die Task-Planung in \emph{Digaboard} ist sehr simpel gehalten. Die Tasks können in der Projekttafel erstellt und einer Zeile zugeordnet werden. Die Zeilen beschreiben den Zustand des Tasks, wie zum Beispiel Ready, Doing, Review und Done. Desweiteren können hier Fehler eingepflegt werdenn, die noch zu beseitigen sind.
+
+\item Projektüberwachung\\
+Die Projektüberwachung wird durch die übersichtliche Darstellung des Gesamtprozesses auf der Anzeigetafel ermöglicht. Hier können Zeitverzüge bei Tasks leicht erkannt werden.
+
+\item Teamverwaltung\\
+Jedes Entwicklerteam bekommt seine eigene Spalte auf der Entwickleranzeigetafel. Dort kann jeder Entwickler seine Taskqueue verwalten.
+\end{itemize}
+
+\emph{Digaboard} dient hauptsächlich als Ersatz einer realen Tafel auf der sonst das Projekt dargestellt wird. Diese virtuelle Tafel hat den Vorteil, dass jedes Teammitglied seinen aktuellen Arbeitsstatus über die Webanwendung anpassen kann und sich über den aktuellen Stand des Projektes informieren kann. Jedoch istdie Aufwandsverwaltung und die Zeiterfassung nicht integriert und somit lässt sich \emph{Digaboard} eher als eine Ergänzung für die Projektverwaltung ansehen. \cite {bib:digaboard} \\
 
 \item[IceScrum]\hspace*{1em}\\
 Das Projektverwaltungswerkzeug \emph{IceScrum} ist eine web-basierte Server\--Anwendung. Die Anwendung lässt sich mittels eines Webbrowsers ansprechen und benutzen. Der Haupteinsatzzweck dieses Open-Source Werkzeugs ist die agile Vorgehensweise \emph{Scrum}. Zudem bietet \emph{IceScrum} noch Methoden der agilen Vorgehensweise \emph{Kanban}.
