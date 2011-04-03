@@ -5,6 +5,15 @@ Wie in Kapitel \ref{sec:einfuehrung} beschrieben, basieren alle Vorgehensmodelle
 \subsection{Extreme Programming}
 Extreme Progamming (XP) ist eine der ältesten agilen Vorgehensmodelle und gibt Vorgaben für die Planung, das Management, das Quellcodedesign, das Testmanagement und die Programmierung eines Softwareprojekts. Dadurch wird XP sehr mächtig, aber auch anspruchsvoll für alle Beteiligten. \cite{bib:wolfRoock} \cite{bib:xp}
 
+Einen Überblick über die Vorgehensweisen bei XP stellt die Abbildung \ref{fig:xppractices} dar. Der äußere Ring stellt die Planung da. Der mittlere Ring repräsentiert die Vorgehensweisen von Management und Design. Im inneren Ring sind die wichtigsten Punkte für das Testen und das Programmieren dargestellt.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/xpCircles}
+  \caption{Vorgehensweisen bei XP \cite{bib:xprogamming}}
+  \label{fig:xppractices}
+\end{figure}
+
 \subsubsection{Planung}
 Die Anforderungen an die Softwarelösung werden in sogenannten \emph{User Stories} festgehalten. Jede Story beschreibt eine Funktion, die der Kunde möchte. Eine solche User Story könnte wie folgt lauten:
 \begin{quote}
@@ -28,7 +37,8 @@ Die auffälligste Unterscheidung von XP zu traditionellen Vorgehensmodellen ist 
 \label{ch:scrum}
 Laut einer Studie von 2010 von \emph{Forrester Research} ist Scrum die verbreitetste agile Methode. So verwendeten ca. 11 \% der befragten IT-Fach\-kräfte das wohl bekannteste agile Vorgehensmodell. \cite{bib:ane} Scrum bietet deutlich weniger Regeln als Extreme Programming und gilt somit als verhältnismäßig leicht einzusetzen. Jedoch muss dabei beachtet werden, dass lediglich Vorgaben für die Planung und das Management eines Softwareprojekts gestellt werden. 
 
-Im Zentrum von Scrum ein hochmotiviertes und selbstgesteuertes Entwicklerteam. Die Rollenverteilung von klassischen Vorgehensmodellen wird grundlegend verändert. Der Produktmanager wird zum Product Owner. Der Teamleiter wird zum Scrum Master. Und das Entwicklerteam (bei Scrum schlicht Team genannt) bekommt deutlich mehr Verantwortung.
+\subsubsection{Rollenverteilung}
+Im Zentrum von Scrum ein hochmotiviertes und selbstgesteuertes Entwicklerteam. Die Rollenverteilung von klassischen Vorgehensmodellen wird grundlegend verändert. Der Produktmanager wird zum Product Owner. Der Teamleiter wird zum Scrum Master. Und das Team, zu dem alle Entwickler gehören, bekommt deutlich mehr Verantwortung.
 
 \begin{description}
 \item{Product Owner}\\
@@ -41,7 +51,45 @@ Der Scrum Master sorgt für die Einhaltung des Entwicklungsprozesses und den Scr
 Das Team steht im Mittelpunkt des Entwicklungsprozesses. Es entscheidet selbst wann es welche Aufgaben erledigt. Verantwortung übernimmt das Team für das Zeit-, Qualitäts- und Dokumentationsmanagement.
 \end{description}
 
-Prozessbeschreibung
+\subsubsection{Prozess}
+Die Abbildung \ref{fig:scrum} stellt das Vorgehen bei Scrum dar. Zu Beginn des Projekts stellt der Product Owner das \emph{Product Backlog} auf, in dem die Anforderungen des Produkts mit User Stories beschrieben werden. Das Product Backlog kann jederzeit vom Product Owner mit weiteren Anforderungen erweitert. Jede Anforderung bekommt vom Product Owner eine Priorität, die sich auch im Laufe des Projekts verändern kann. Das priorisierte Product Backlog stellt der Product Owner im \emph{Sprint Planning Meeting} dem Team vor. Beim Sprint Planning Meeting wählt das Team so viele User Stories aus dem Product Backlog aus, wie es denkt während der nächsten Iteration (\emph{Sprint} abarbeiten zu können. Die User Stories teilt das Team in einzelne Aufgaben auf und hält sie im \emph{Sprint Backlog} fest. Das Sprint Backlog darf während einer Iteration nicht verändert werden.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/scrum}
+  \caption{Prozessüberblick bei Scrum \cite{bib:mountaingoat}}
+  \label{fig:scrum}
+\end{figure}
+
+Nach dem Meeting beginnt der Sprint. Ein Sprint stellt eine Iteration von zwei bis vier Wochen dar und wird immer wieder durchlaufen. Während des Sprints findet täglich ein \emph{Daily Scrum Meeting} statt an dem das Team und der Scrum Master teilnehmen. Dieses ist gleich aufgebaut wie das tägliche Meeting beim Extreme Progamming. Die Dauer des Meetings legt der Scrum Master in der Regel auf 15 Minuten fest und hält dies auch ein. Jeder Teilnehmer bespricht kurz die folgenden drei Dinge: 
+\begin{itemize}
+  \item Was habe ich gestern gemacht? 
+  \item Was steht heute auf dem Plan? 
+  \item Und welche Probleme habe sehe ich?
+\end{itemize}
+Im Sprint Backlog wird der tägliche Fortschritt festgehalten. Dadurch entsteht ein immer aktuelles Burn-Down Diagramm (Abbildung \ref{fig:burndown}), das den Fortschritt des Sprints übersichtlich darstellt. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.8\textwidth]{images/burndown}
+  \caption{Burn-Down Diagramm eines Sprints \cite{bib:agilo}}
+  \label{fig:burndown}
+\end{figure}
+
+Am Ende des Sprints muss eine lauffähige Version des Programms verfügbar sein, die dem Product Owner im \emph{Sprint Review Meeting} präsentiert wird. Zusätzlich gibt es noch das \emph{Sprint Retrospectiv Meeting}, an dem über den vergangen Sprint reflektiert wird um über Veränderungen eine Verbesserung des Prozesses zu erzielen.
+
+\subsubsection{Scrum Anti-Pattern}
+Marion Eickmann schreibt, dass Scrum nur dann funktioniert, wenn auch alle Beteiligten sich an die Regeln halten: ``Alle Beteiligten müssen sich an das neue Vorgehen gewöhnen und sind unsicher was zu tun ist, wenn Unerwartetes geschieht. Solche Schwierigkeiten führen häufig dazu, `bekannte' Mechanismen `nur für den Fall' anzuwenden, statt das Problem nach Scrum-Art zu lösen.'' \cite[S. 84]{bib:ix2010}. So führt sie in ihrem Artikel mehrere bekannte Scrum Anti-Pattern auf, die es gilt zu vermeiden. Die wichtigsten seien hier aufgezählt:
+\begin{itemize}
+  \item Der Scrum Master weist Tasks zu und zerstört so das sich selbst steuernde und organisierende Team
+  \item Der Sprint wird von außen gestört. Es werden neue Aufgaben eingefügt oder Änderungen an den gewählten (committed) user Stories vorgenommen.
+  \item Es finden keine Review Meeting statt
+  \item Es findet keine Retrospective statt
+  \item Es gibt keine regelmäßigen Daily Standup Meetings
+  \item Der Product Owner hat keine ausreichende Kompetenz und nimmt seine Rolle nicht war
+  \item Meetings sind nicht Time-Boxed
+  \item Statt Funktionen werden Aktivitäten erfasst
+\end{itemize} 
 
 \subsection{Software Kaban}
 
