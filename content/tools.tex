@@ -276,29 +276,32 @@ Um eine gute Kommunikation mit dem Kunden zu erreichen, hat dieser auch einen Zu
 \subsection{Ergebnisse}
 Die im vorherigen Punkt vorgestellten Werkzeuge werden nun anhand ihres Funktionsumfanges bewertet. Es wird keine Bewertung in Bezug  auf Usability oder Performance vorgenommen.  Dabei werden die funktionalen Anforderungen für eine Verwaltung aus dem Unterpunkt \ref{ssec:anforderungen} als Betrachtungskriterien herangezogen.
 
-\begin{enumerate}
-\item Ressourcenverwaltung \label{enum:ress}
-\item Rollenverteilung \label{enum:roll}
-\item Zeitverwaltung \label{enum:zeit}
-\item Aufgabenverteilung \label{enum:aufg}
-\item Problemmanagement \label{enum:prob}
-\item Releaseplanung \label{enum:rele}
-\end{enumerate}
-
-\begin{center}
-\begin{tabular}[h]{l|c|c|c|c|c|c}
-\textbf{Werkzeuge} & \textbf{\ref{enum:ress}} & \textbf{\ref{enum:roll}} & \textbf{\ref{enum:zeit}} & \textbf{\ref{enum:aufg}} & \textbf{\ref{enum:prob}} & \textbf{\ref{enum:rele}}\\
-\hline
-in-Step S. E. & ++ & + & - & ++ & O & ++\\
-TargetProcess & + & ++ & ++ & ++ & + & +\\
-TFS 2010 & ++ & O & + & + & ++ & ++\\
-\hline
-Agilefant & + & ++ & + & + & - & +\\
-Agilo for Scrum & + & ++ & - & - & + & +\\
-Diagboard & - & - - & - & ++ & O & - -\\
-IceScrum & + & ++ & + & + & - - & +\\
-XPlanner & + & ++ & + & + & O & O\\
-\end{tabular}
-\end{center}
+\begin{figure}[h]
+  \centering
+  \begin{minipage}[c]{0.66\textwidth}
+    \begin{tabular}[h]{l|c|c|c|c|c|ccl}
+      \textbf{Werkzeuge} & \textbf{ResV} & \textbf{RolV} & \textbf{ ZV } & \textbf{ AV } & \textbf{ PM } & \textbf{ RP }\\
+      \hline
+      in-Step S. E. & ++ & + & - & ++ & O & ++\\
+      TargetProcess & + & ++ & ++ & ++ & + & +\\
+      TFS 2010 & ++ & O & + & + & ++ & ++\\
+      \hline
+      Agilefant & + & ++ & + & + & - & +\\
+      Agilo for Scrum & + & ++ & - & - & + & +\\
+      Diagboard & - & - - & - & ++ & O & - -\\
+      IceScrum & + & ++ & + & + & - - & +\\
+      XPlanner & + & ++ & + & + & O & O\\
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[c]{0.33\textwidth}
+    \hspace{1em}\\
+    \emph{ResV} Ressourcenverwaltung\\
+    \emph{RolV} Rollenverteilung\\
+    \emph{ZV} Zeitverwaltung\\
+    \emph{AV} Aufgabenverteilung\\
+    \emph{PM} Problemmanagement\\
+    \emph{RP} Releaseplanung\\
+  \end{minipage}
+\end{figure}
 
 Die Tabelle zeigt, dass der Funktionsumfang von Open-Source Anwendungen für agile Projektverwaltung zwar denen von proprietären Anwendungen unterlegen ist, jedoch müssen sich die quelloffenen Anwendungen nicht verstecken. Einige Open-Source Projektverwaltungen haben den Umfang, der einen Produktiveinsatz erlaubt. Die proprietären Projektverwaltungssoftwaren können durch eine gute Integration in Entwicklungsumgebungen und in Versionierungssysteme punkten. Desweiteren unterstützen sie die Qualitätssicherung durch die Verwaltung von Tests und die leichte Einpflege von gefundenen Fehlern.
