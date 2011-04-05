@@ -3,7 +3,7 @@
 Wie in Kapitel \ref{sec:einfuehrung} beschrieben, basieren alle Vorgehensmodelle auf wenigen klaren Regeln. Die bedeutendsten Modelle werden in diesem Kapitel genauer erläutert.
 
 \subsection{Extreme Programming}
-Extreme Progamming (XP) ist eine der ältesten agilen Vorgehensmodelle und gibt Vorgaben für die Planung, das Management, das Quellcodedesign, das Testmanagement und die Programmierung eines Softwareprojekts. Dadurch wird XP sehr mächtig, aber auch anspruchsvoll für alle Beteiligten. \cite{bib:wolfRoock} \cite{bib:xp}
+Extreme Progamming (XP) ist eine der ältesten agilen Vorgehensmodelle und gibt Vorgaben für die Planung, das Management, das Quellcodedesign, das Testmanagement und die Programmierung eines Softwareprojekts. Dadurch wird XP sehr mächtig, aber auch anspruchsvoll für alle Beteiligten. \cite[S. 13]{bib:wolfRoock} \cite{bib:xp}
 
 Einen Überblick über die Vorgehensweisen bei XP stellt die Abbildung \ref{fig:xppractices} dar. Der äußere Ring stellt die Planung da. Der mittlere Ring repräsentiert die Vorgehensweisen von Management und Design. Im inneren Ring sind die wichtigsten Punkte für das Testen und das Programmieren dargestellt.
 
@@ -41,13 +41,13 @@ Laut einer Studie von 2010 von \emph{Forrester Research} ist Scrum die verbreite
 Im Zentrum von Scrum ein hochmotiviertes und selbstgesteuertes Entwicklerteam. Die Rollenverteilung von klassischen Vorgehensmodellen wird grundlegend verändert. Der Produktmanager wird zum Product Owner. Der Teamleiter wird zum Scrum Master. Und das Team, zu dem alle Entwickler gehören, bekommt deutlich mehr Verantwortung.
 
 \begin{description}
-\item{Product Owner}\\
+\item Product Owner\\
 Er bringt die Produktvision mit sich und ist verantwortlich für das Produkt. Dabei definiert er die Anforderungen, priorisiert sie und kontrolliert die Ergebnisse. Zusätzlich behält er das Budget und die Wirtschaftlichkeit im Blick. Wichtig: Der Product Owner gibt dem Team keine Zeitvorgaben.
 
-\item{Scrum Master}\\
+\item Scrum Master\\
 Der Scrum Master sorgt für die Einhaltung des Entwicklungsprozesses und den Scrum-Regeln. Hierzu schützt er das Team auch vor Störungen von außen und beseitigt organisatorische Probleme. Wichtig: Der Scrum Master vergibt keine Aufgaben.
 
-\item{Team}\\
+\item Team\\
 Das Team steht im Mittelpunkt des Entwicklungsprozesses. Es entscheidet selbst wann es welche Aufgaben erledigt. Verantwortung übernimmt das Team für das Zeit-, Qualitäts- und Dokumentationsmanagement.
 \end{description}
 
@@ -71,7 +71,7 @@ Im Sprint Backlog wird der tägliche Fortschritt festgehalten. Dadurch entsteht 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\textwidth]{images/burndown}
+  \includegraphics[width=1\textwidth]{images/burndown}
   \caption{Burn-Down Diagramm eines Sprints \cite{bib:agilo}}
   \label{fig:burndown}
 \end{figure}
@@ -94,5 +94,74 @@ Marion Eickmann schreibt, dass Scrum nur dann funktioniert, wenn auch alle Betei
 \subsubsection{Verknüpfung mit anderen Methoden}
 Da Scrum lediglich Vorgaben für die Planung und das Management eines Softwareprojekts macht, wird es oftmals mit anderen Vorgehensmodelle kombiniert. So können zum Beispiel die Punkte Quellcodedesign, Testmanagement und Programmierung von Extreme Programming übernommen werden. Das kombinierte Vorgehensmodell hat zwar viele Regeln, die es gilt einzuhalten, aber deckt den kompletten Softwareentwicklungsprozess ab.
 
-\subsection{Software Kaban}
+\subsection{Software Kanban}
+Software Kanban ist die jüngste der hier vorgestellten Methoden und unterscheidet sich auch stark ihnen. So gibt Software Kanban nicht vor wie man ein Projekt durchführt, sondern lediglich wie man den Prozess von einer klassischen Vorgehensweise in eine Agile umwandelt (\emph{Change Management Methode}). \cite[S. 14]{bib:wolfRoock} Dabei wird versucht den Entwicklungsprozess Schritt für Schritt zu verbessern, statt einen radikalen Schnitt wie bei Scrum oder XP zu wagen. Dies minimiert die Widerstände der einzelnen Beteiligten gegenüber großen Veränderungen. \cite{bib:ix2011}
 
+\subsubsection{Grundprinzipien}
+David J. Anderson \cite{bib:anderson}, der Erfinder von Software Kanban, definiert drei Grundprinzipien für die Methode:
+\begin{itemize}
+  \item Beginne dort, wo du dich im Moment befindest
+  \item Komme mit den anderen überein, dass inkrementelle, evolutionäre Veränderungen angestrebt werden
+  \item Respektiere den bestehenden Prozess sowie die existierenden Rollen, Verantwortlichkeiten und Berufsbezeichnungen
+\end{itemize}
+
+Durch das erste Grundprinzip entstehen viele verschiedene Implementierungen der Methode. So kann Software Kanban an ein bestehendes Wasserfallmodell gekoppelt werden oder auch eine bestehende Implementierung vom V-Modell langsam verändern und verbessern.
+
+Des Weiteren definiert Anderson fünf Kerneigenschaften von Software Kanban, die im folgenden näher erläutert werden.
+
+\subsubsection{Visualisierungen}
+Als erster Schritt in Software Kanban wird der aktuelle Entwicklungsprozess visualisiert. Es bietet sich ein Whiteboard mit den einzelnen Prozessschritten als Spalten dargestellt an. Ein solches Whiteboard ist in Abbildung \ref{fig:kanbanBoard} dargestellt. Typische Prozessschritte sind zum Beispiel:
+\begin{itemize}
+  \item Idee/Bestellung (Backlog)
+  \item Eingeplant
+  \item Entwicklung
+  \item Test
+  \item Auslieferung
+  \item Produktiv
+\end{itemize}
+
+Zu jeder Spalte sind eine oder mehrere Personen zugeordnet. Wenn es bei der Vorgängermethode zum Beispiel auch Softwarearchitekten gab, muss eine Spalte \emph{Design} hinzugefügt werden. Die Spalten \emph{Entwicklung} und \emph{Test} werden nochmals unterteilt in \emph{laufend} und \emph{erledigt}. 
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/kanbanBoard}
+  \caption{Visualisierung eines Entwicklungsprozesses in Software Kanban \cite{bib:roock}}
+  \label{fig:kanbanBoard}
+\end{figure}
+
+Die einzelnen Anforderungen (\emph{Ticket}) an das Softwareprodukt werden auf Haftnotizen oder Karteikarten geschrieben, mit einer Priorität versehen und in die Spalte \emph{Backlog} geheftet. Jede Anforderung durchläuft nun den gesamten Prozess, wobei immer notiert wird, wann die Anforderung in welcher Spalte aufgenommen wurde.
+
+Ein kleiner Bruch mit der Vorgängermethode stellt nun das \emph{Pull-Prinzip} dar. Wer eine Aufgabe erledigt hat, darf sich in der Vorgängerspalte eine neue Anforderung nehmen und abarbeiten. Welche Anforderung der Entwickler hier nimmt soll lediglich die Priorität und nicht der Wille des Projektleiters eine Rolle spielen. Eine Überbelastung der Beteiligten wird damit vermindert, da jeder selbst entscheidet wie viel Arbeit er auf sich nimmt.
+
+\subsubsection{Begrenzungen}
+Für jede Spalte wird nun ein \emph{Work in Progress-Limit} (\emph{WiP-Limit}) festgelegt. Es bestimmt wie viel Tickets pro Prozessschritt maximal gleichzeitig bearbeitet werden dürfen. Dadurch minimieren sich Zeitverlust und Flüchtigkeitsfehler durch häufige Kontextwechsel. Außerdem werden Engpässe schneller sichtbar. Wenn zum Beispiel die Testabteilung ständig am Limit arbeitet, sollten hier eventuell mehr Personen eingesetzt werden.
+Die WiP-Limits werden wie in Abbildung \ref{fig:kanbanBoard} zu jeder Spalte geschrieben.
+
+\subsubsection{Messungen}
+Eine weitere Kerneigenschaft von Software Kanban ist die ständige Erstellung von Metriken. Hierbei sind zwei Messungen besonders wichtig:
+\begin{description}
+  \item Lead Time\\ Durchlaufzeit einer Anforderung vom Backlog bis zur Auslieferung
+  \item Cycle Time\\ Reine Entwicklungszeit ohne Wartezeiten
+\end{description}
+Weitere Messungen sind unter anderem \emph{Durchsatz}, \emph{Fehlerrate} und \emph{Termintreue}. Durch die Darstellung der Metriken werden Engpässe und Verbesserungsmöglichkeiten sichtbar. Auch die Tickets werden überwacht und z.B. als Cumulative Flow Chart (Abbildung \ref{fig:kanbanChart}) dargestellt.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{images/kanbanChart}
+  \caption{Cumulative Flow Chart der Tickets}
+  \label{fig:kanbanChart}
+\end{figure}
+
+\subsubsection{Prozessregeln}
+Um die Vorgehensweise für alle Beteiligten transparent darzustellen werden alle Regeln festgehalten. Es bietet sich an alle Prozessregeln direkt nebem dem Whiteboard anzubringen. Beispiele für solche Regeln sind:
+\begin{itemize}
+  \item Wodurch kommen Tickets in das Backlog?
+  \item In welcher Reihenfolge werden Tickets abgearbeitet?
+  \item Wann dürfen WiP-Limits gebrochen werden
+  \item Wie werden Bugs in dem Prozess behandelt?
+\end{itemize}
+
+\subsubsection{Verbesserungen}
+Die fünfte Kerneigenschaft von Software-Kanban ist die kontinuierliche Verbesserung. Hierzu können nach und nach weitere Merkmale von anderen agilen Vorgehensmodellen wie Scrum und XP übernommen werden. So kann ein tägliches Stand-Up-Meeting die Kommunikation erhöhen. Pair Programming erhöht die Qualität. Test First verbessert ebenfalls die Qualität. 
+
+Wichtig bei der Einführung der neuen Merkmale ist die Akzeptanz bei allen Beteiligten. Wenn der Verbesserungsprozess zu schnell durchgeführt wird, werden einige Beteiligte sich gegen die Veränderungen wehren und den gesamten Prozess stören. Ob eine Veränderung auch eine Verbesserung der Situation bedeutet kann mit den erstellten Metriken überprüft werden. Im Notfall sollte die Veränderung auch wieder rückgängig gemacht werden können.
