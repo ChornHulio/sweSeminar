@@ -24,7 +24,7 @@ Danach wird ein \emph{Release-Plan} erstellt. In der Regel werden alle drei Mona
 Auch für das Management eines Softwareprojekts sind bei XP klare Regeln definiert. Täglich gibt es ein Meeting, bei dem jeder Entwickler kurz sagt, was er am Vortag getan hat, was er heute tun wird und welche Probleme er sieht. Eine weitere wichtige Regel ist, dass ein Entwickler nicht länger arbeiten darf, als er auf unbefristete Zeit leisten kann. Normalerweise sind dies acht Stunden pro Tag. Überstunden sind nicht gern gesehen. Des Weiteren soll jeder Entwickler in den gesamten Prozess eingebunden sein und immer über den Gesamtstand des Projektes informiert sein. Außerdem sollen Entwickler immer wieder mit anderen Aufgaben betraut werden. Damit soll vermieden werden, dass sie den Anschluss zum technologischen Geschehen verlieren. Aus dem selben Grund soll den Entwicklern auch genügend Freiraum gegeben werden, um auch während eines Projekts sich mit technischen Neuerungen zu befassen.
 
 \subsubsection{Quellcodedesign}
-Da im Gegensatz zu klassischen Vorgehensmodellen die endgültige Architektur der Softwarelösung während der Programmierung noch nicht klar ist, sind beim Design einige Regeln zu beachten. Die wichtigste ist hier die Einfachheit. Der Quellcode ist so einfach wie möglich zu halten. Es sollen keine unnötigen Funktionen implementiert werden und es ist so zu programmieren, dass jeder aus dem Team den Quellcode verstehen kann. Des Weiteren soll immer wenn es sinnvoll ist, refactort werden.
+Da im Gegensatz zu klassischen Vorgehensmodellen die end\-gül\-ti\-ge Architektur der Softwarelösung während der Programmierung noch nicht klar ist, sind beim Design einige Regeln zu beachten. Die wichtigste ist hier die Einfachheit. Der Quellcode ist so einfach wie möglich zu halten. Es sollen keine unnötigen Funktionen implementiert werden und es ist so zu programmieren, dass jeder aus dem Team den Quellcode verstehen kann. Des Weiteren soll immer wenn es sinnvoll ist, refactort werden.
 
 \subsubsection{Testmanagement}
 Bei Extreme Programming wird testgetrieben entwickelt. Das heißt, der Unit-Test einer Funktion wird vor der Funktion selbst implementiert. Diese Art der Programmierung zwingt den Programmierer zu einer genaueren Überlegung, was die Funktion erledigen soll und welche Grenzfälle dabei auftreten können. Und dabei stellt das \emph{Test First} genannte Prinzip gleichzeitig sicher, dass es eine komplette Testabdeckung gibt. Die Unit-Tests werden mehrmals täglich ausgeführt. Zur weiteren Verbesserung der Qualität werden die Änderungen der Entwickler mehrfach am Tag in die gemeinsame Quellcodebasis integriert und kompiliert. Dieser Integrationstest stellt sicher, dass die einzelnen Teilkomponenten korrekt miteinander kommunizieren können. Noch eine Stufe abstrakter ist der \emph{Acceptance Test}. Dies ist ein Black-Box-Test, der nach jeder Iteration vom Kunde durchgeführt wird. Jeder Fehler, der vom Kunde gemeldet und von den Entwicklern behoben wurde, muss mit einem Unit-Test abgedeckt werden um ihn zukünftig zu vermeiden.
@@ -75,7 +75,7 @@ Im Sprint Backlog wird der tägliche Fortschritt festgehalten. Dadurch entsteht 
   \label{fig:burndown}
 \end{figure}
 
-Am Ende des Sprints muss eine lauffähige Version des Programms verfügbar sein, die dem Product Owner im \emph{Sprint Review Meeting} präsentiert wird. Zusätzlich gibt es noch das \emph{Sprint Retrospective Meeting}, an dem über den vergangen Sprint reflektiert wird um über Veränderungen eine Verbesserung des Prozesses zu erzielen.
+Am Ende des Sprints muss eine lauffähige Version des Programms verfügbar sein, die dem Product Owner im \emph{Sprint Review Meeting} präsentiert wird. Zu\-sätz\-lich gibt es noch das \emph{Sprint Retrospective Meeting}, an dem über den vergangen Sprint reflektiert wird um über Veränderungen eine Verbesserung des Prozesses zu erzielen.
 
 \subsubsection{Scrum Anti-Pattern}
 Marion Eickmann schreibt, dass Scrum nur dann funktioniert, wenn auch alle Beteiligten sich an die Regeln halten: ``Alle Beteiligten müssen sich an das neue Vorgehen gewöhnen und sind unsicher was zu tun ist, wenn Unerwartetes geschieht. Solche Schwierigkeiten führen häufig dazu, `bekannte' Mechanismen `nur für den Fall' anzuwenden, statt das Problem nach Scrum-Art zu lösen.'' \cite[S. 84]{bib:ix2010}. So führt sie in ihrem Artikel mehrere bekannte Scrum Anti-Pattern auf, die es gilt zu vermeiden. Die wichtigsten seien hier aufgezählt:
@@ -100,7 +100,7 @@ Software Kanban ist die jüngste der hier vorgestellten Methoden und unterscheid
 David J. Anderson \cite{bib:anderson}, der Erfinder von Software Kanban, definiert drei Grundprinzipien für die Methode:
 \begin{itemize}
   \item Beginne dort, wo du dich im Moment befindest
-  \item Komme mit den anderen überein, dass inkrementelle, evolutionäre Veränderungen angestrebt werden
+  \item Komme mit den anderen überein, dass inkrementelle, evolutionäre Ver\-änder\-ungen angestrebt werden
   \item Respektiere den bestehenden Prozess sowie die existierenden Rollen, Verantwortlichkeiten und Berufsbezeichnungen
 \end{itemize}
 
@@ -142,7 +142,7 @@ Eine weitere Kerneigenschaft von Software Kanban ist die ständige Erstellung vo
   \item Lead Time\\ Durchlaufzeit einer Anforderung vom Backlog bis zur Auslieferung
   \item Cycle Time\\ Reine Entwicklungszeit ohne Wartezeiten
 \end{description}
-Weitere Messungen sind unter anderem \emph{Durchsatz}, \emph{Fehlerrate} und \emph{Termintreue}. Durch die Darstellung der Metriken werden Engpässe und Verbesserungsmöglichkeiten sichtbar. Auch die Tickets werden überwacht und z.B. als Cumulative Flow Chart (Abbildung \ref{fig:kanbanChart}) dargestellt.
+Weitere Messungen sind unter anderem \emph{Durchsatz}, \emph{Fehlerrate} und \emph{Termintreue}. Durch die Darstellung der Metriken werden Engpässe und Ver\-besserungs\-mög\-lich\-keit\-en sichtbar. Auch die Tickets werden überwacht und z.B. als Cumulative Flow Chart (Abbildung \ref{fig:kanbanChart}) dargestellt.
 
 \begin{figure}[h]
   \centering
@@ -152,7 +152,7 @@ Weitere Messungen sind unter anderem \emph{Durchsatz}, \emph{Fehlerrate} und \em
 \end{figure}
 
 \subsubsection{Prozessregeln}
-Um die Vorgehensweise für alle Beteiligten transparent darzustellen werden alle Regeln festgehalten. Es bietet sich an alle Prozessregeln direkt neben dem Whiteboard anzubringen. Beispiele für solche Regeln sind:
+Um die Vorgehensweise für alle Beteiligten transparent dar\-zu\-stellen werden alle Regeln festgehalten. Es bietet sich an alle Prozessregeln direkt neben dem Whiteboard anzubringen. Beispiele für solche Regeln sind:
 \begin{itemize}
   \item Wodurch kommen Tickets in das Backlog?
   \item In welcher Reihenfolge werden Tickets abgearbeitet?
@@ -166,4 +166,4 @@ Die fünfte Kerneigenschaft von Software-Kanban ist die kontinuierliche Verbesse
 Wichtig bei der Einführung der neuen Merkmale ist die Akzeptanz bei allen Beteiligten. Wenn der Verbesserungsprozess zu schnell durchgeführt wird, werden einige Beteiligte sich gegen die Veränderungen wehren und den gesamten Prozess stören. Ob eine Veränderung auch eine Verbesserung der Situation bedeutet kann mit den erstellten Metriken überprüft werden. Im Notfall sollte die Veränderung auch wieder rückgängig gemacht werden können.
 
 \subsection{Ergebnisse}
-Als Paradebeispiele für agiles Vorgehen gelten Extreme Programming und Scrum, welche auch zu den beliebtesten Methoden zählen. Sie geben den Entwicklern und Projektbeteiligten wenige klare Regeln an die Hand und steigern dadurch Flexibilität, Effizienz und Transparenz. \cite[S. 28 f.]{bib:wolfRoock} Wenn die Widerstände gegen eine Umstellung auf eine der Methoden zu groß sind, kann die Change-Management-Methode Software Kanban einen sanften Einstieg in die agile Softwareentwicklung zu ermöglichen. Hier wird eine evolutionäre Umstellung der bestehenden Strukturen durchgeführt.
+Als Paradebeispiele für agiles Vorgehen gelten Extreme Programming und Scrum, welche auch zu den beliebtesten Methoden zählen. Sie geben den Entwicklern und Projektbeteiligten wenige klare Regeln an die Hand und steigern dadurch Flexibilität, Effizienz und Transparenz. \cite[S. 28 f.]{bib:wolfRoock} Jedoch müssen um eine agile Methode umzusetzen alle Regeln eingehalten werden. Es sollte auch genügend Know-How im Entwicklerteam vorhanden sein, um ein klares und erweiterbares Design aufzubauen. Wenn die Widerstände gegen eine Umstellung auf eine der Methoden zu groß sind, kann die Change-Manage\-ment-Methode Software Kanban einen sanften Einstieg in die agile Softwareentwicklung ermöglichen. Hier wird eine evolutionäre Umstellung der bestehenden Strukturen durchgeführt.
